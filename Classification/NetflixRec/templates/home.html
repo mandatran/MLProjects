@@ -1,0 +1,60 @@
+<!-- Netflix Recommendation: Home Page -->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Netflix Recommendations</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/c7af48cee3.js" 
+            crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Abel|Bebas+Neue&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/af93cb003d.js" 
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+
+    <body>
+        <div class="home-wrapper">
+            <!-- top navigation -->
+            <div class="topnav">
+                <div class="menu-left">
+                    <a href="../../index.html">&#8592; Back to mandatran.github.io</a>
+                </div>
+                <div class="menu-right">
+                    <a href="home.html" class="active">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="links.html">Links</a>
+                    <a href="discussion.html">Discussion</a>
+                    <a href="process.html">Process</a>
+                </div>
+            </div>
+
+            <!-- Home Title and Description -->
+            <div class="home-descrip">
+                <h1>Netflix Recommendation System</h1>
+                <br>
+                <p>Hello! &#128296 This Site is Under Construction!</p>
+            </div>
+
+        </div>
+        <div class="netflix-form">
+            <form name="getTitle" action=".", method="post">
+                <label for="titleName">Title:</label>
+                <input type="text" id="titleName" name="titleName">
+                <input type="submit" value="Submit">
+            </form>
+            <p> {{ttl}} </p>
+        </div>
+    </body>
+
+    <!-- Footer -->
+    <footer>
+        <p>Created by Manda Tran</p>
+        <div class="footer-links">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="links.html">Links</a>
+            <a href="discussion.html">Discussion</a>
+            <a href="process.html">Process</a>
+        </div>
+    </footer>
+</html>
